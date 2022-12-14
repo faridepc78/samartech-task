@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "171593aa-4876-4b76-bc5d-a0b5c3c66d9f",
+		"name": "samartech-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19129870"
+	},
+	"item": [
+		{
+			"name": "Api",
+			"item": [
+				{
+					"name": "V1",
+					"item": [
+						{
+							"name": "Dev",
+							"item": [
+								{
+									"name": "Post",
+									"item": [
+										{
+											"name": "get_posts",
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"accept": true
+												}
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{LOCAL_BASE_URL}}/v1/dev/posts",
+													"host": [
+														"{{LOCAL_BASE_URL}}"
+													],
+													"path": [
+														"v1",
+														"dev",
+														"posts"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "show_post",
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"accept": true
+												}
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{LOCAL_BASE_URL}}/v1/dev/posts/1",
+													"host": [
+														"{{LOCAL_BASE_URL}}"
+													],
+													"path": [
+														"v1",
+														"dev",
+														"posts",
+														"1"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "create_post",
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"accept": true
+												}
+											},
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"user_id\": 1,\r\n    \"name\": \"learn laravel\",\r\n    \"slug\": \"how to learn laravel\",\r\n    \"summary\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\r\n    \"status\": \"active\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{LOCAL_BASE_URL}}/v1/dev/posts",
+													"host": [
+														"{{LOCAL_BASE_URL}}"
+													],
+													"path": [
+														"v1",
+														"dev",
+														"posts"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "update_post",
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"accept": true
+												}
+											},
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"user_id\": 5,\r\n    \"name\": \"learn laravel\",\r\n    \"slug\": \"how to learn laravel\",\r\n    \"summary\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\r\n    \"status\": \"active\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{LOCAL_BASE_URL}}/v1/dev/posts/11",
+													"host": [
+														"{{LOCAL_BASE_URL}}"
+													],
+													"path": [
+														"v1",
+														"dev",
+														"posts",
+														"11"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "delete_post",
+											"protocolProfileBehavior": {
+												"disabledSystemHeaders": {
+													"accept": true
+												}
+											},
+											"request": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{LOCAL_BASE_URL}}/v1/dev/posts/5",
+													"host": [
+														"{{LOCAL_BASE_URL}}"
+													],
+													"path": [
+														"v1",
+														"dev",
+														"posts",
+														"5"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "LOCAL_BASE_URL",
+			"value": "http://samartech-task.test/api",
+			"type": "string"
+		}
+	]
+}
