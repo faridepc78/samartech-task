@@ -1,8 +1,8 @@
-#Samartech Task
+#LaraBlog
 <p align="center ">
 </p>
 
-## About This Task
+## About This App
 
 This program manages the posts in the form of api
 Its features include the following :
